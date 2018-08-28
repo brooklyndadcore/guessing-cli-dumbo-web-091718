@@ -11,9 +11,9 @@ def run_guessing_game
     elsif guess != num 
       puts "The computer guessed #{num}."
       puts "Exit or Play?"
-      quest1 = gets.chomp
-      return "Goodbye!" if quest1 == "exit"
-      run_guessing_game if quest1 == "play"
+      quest = gets.chomp
+      return "Goodbye!" if quest == "exit"
+      run_guessing_game if quest == "play"
     end
   end
 end
