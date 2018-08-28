@@ -9,12 +9,11 @@ def run_guessing_game
   while quest == nil 
     quest = gets.chomp
     if quest != num 
-    puts "You guessed the correct number!" if quest == num
-    
       puts "The computer guessed #{num}."
       puts "Exit?"
       quest = gets.chomp
       exit_game if quest.downcase == "exit"
-    end 
+    end
+    puts "You guessed the correct number!" if quest == num
   end
 end
