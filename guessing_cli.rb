@@ -1,7 +1,7 @@
 
 def run_guessing_game
- 
-  loop do 
+  quest = nil
+  while quest == nil 
     puts "Guess a number between 1 and 6."
     quest = gets.chomp
     num = rand(1..6)
