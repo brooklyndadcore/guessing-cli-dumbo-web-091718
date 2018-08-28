@@ -8,11 +8,12 @@ def run_guessing_game
     guess = quest.to_i
     if guess != num 
       puts "The computer guessed #{num}."
-      puts "Exit?"
+      puts "Exit or Play?"
       quest1 = gets.chomp
       return "Goodbye!" if quest1 == "exit"
+      run_guessing_game if quest1 == "play"
     elsif guess == num
-      puts "You guessed the correct number!" 
+      return "You guessed the correct number!" 
     end
   end
 end
