@@ -5,12 +5,13 @@ def run_guessing_game
   puts "Guess a number between 1 and 6."
   while quest == nil 
     quest = gets.chomp
-    if quest != num 
+    guess = quest.to_i
+    if guess != num 
       puts "The computer guessed #{num}."
       puts "Exit?"
       quest1 = gets.chomp
       return "Goodbye!" if quest1 == "exit"
-    elsif quest == num
+    elsif guess == num
       puts "You guessed the correct number!" 
     end
   end
