@@ -7,7 +7,7 @@ def run_guessing_game
     quest = gets.chomp
     guess = quest.to_i
      num = rand(1..6)
-    if guess == "exit"
+    if quest == "exit"
       puts "Goodbye!"
       break
     elsif  guess == num
