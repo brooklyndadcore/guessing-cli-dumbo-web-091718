@@ -9,7 +9,7 @@ def run_guessing_game
       puts "Goodbye!"
       break
     elsif quest.to_i == num
-      return "You guessed the correct number!"
+      puts "You guessed the correct number!"
     elsif quest.to_i != num 
       puts "The computer guessed #{num}."
     end
