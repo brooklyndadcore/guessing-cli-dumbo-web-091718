@@ -1,6 +1,5 @@
 
 def run_guessing_game
-  quest = nil
  
   loop do 
     puts "Guess a number between 1 and 6."
