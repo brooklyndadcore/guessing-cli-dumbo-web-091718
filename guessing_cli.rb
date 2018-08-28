@@ -13,7 +13,8 @@ def run_guessing_game
       puts "Exit?"
       quest = gets.chomp
       exit_game if quest.downcase == "exit"
+    elsif quest == num
+      puts "You guessed the correct number!" 
     end
-    puts "You guessed the correct number!" if quest == num
   end
 end
